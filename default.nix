@@ -14,7 +14,7 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  ab-av1 = pkgs.callPackage ./pkgs/ab-av1 { };
+  #ab-av1 = pkgs.callPackage ./pkgs/ab-av1 { };
   Anime4k-rs = pkgs.callPackage ./pkgs/Anime4k-rs { };
   onedrive-fuse = pkgs.callPackage ./pkgs/onedrive-fuse { };
   jjwxcCrawler = pkgs.callPackage ./pkgs/jjwxcCrawler { };
@@ -25,10 +25,10 @@
   rescrobbled = pkgs.callPackage ./pkgs/rescrobbled { };
   swgp-go = pkgs.callPackage ./pkgs/swgp-go { };
   Penguin-Subtitle-Player  = pkgs.libsForQt5.callPackage ./pkgs/Penguin-Subtitle-Player { };
-  waylyrics = pkgs.callPackage ./pkgs/waylyrics {};
+  #waylyrics = pkgs.callPackage ./pkgs/waylyrics {};
   vkbasalt = pkgs.callPackage ./pkgs/vkbasalt {};
   HDiffPatch = pkgs.callPackage ./pkgs/HDiffPatch {};
-  sakaya = pkgs.callPackage ./pkgs/sakaya {};
+  #sakaya = pkgs.callPackage ./pkgs/sakaya {};
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }

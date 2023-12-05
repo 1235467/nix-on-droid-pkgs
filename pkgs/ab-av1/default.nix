@@ -28,7 +28,7 @@ rustPlatform.buildRustPackage {
   nativeBuildInputs = [
     pkg-config
   ];
-
+  RUSTC_BOOTSTRAP = 1;
   buildInputs = [
     ffmpeg
     git

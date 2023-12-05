@@ -22,7 +22,7 @@ rustPlatform.buildRustPackage {
         lockFile = ./Cargo.lock;
       };
 
-
+  RUSTC_BOOTSTRAP = 1;
   nativeBuildInputs = [
     installShellFiles
   ];

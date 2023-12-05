@@ -13,6 +13,7 @@ buildGoModule {
 
   vendorHash = "sha256-3CjYLzLL4q/qCGxkqhSOCjQhe9RqSpmH5d7K3p257Tw=";
   doCheck = false;
+  patches = [ ./version.patch ];
   meta = with lib; {
     description = "🐉 Simple WireGuard proxy with minimal overhead for WireGuard traffic";
     homepage = "https://github.com/database64128/swgp-go";

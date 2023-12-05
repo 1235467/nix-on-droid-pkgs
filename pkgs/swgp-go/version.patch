@@ -1,12 +1,12 @@
 diff --git a/go.mod b/go.mod
-index b19ae4c..a49ad64 100644
+index b19ae4c..0c3c6c9 100644
 --- a/go.mod
 +++ b/go.mod
 @@ -1,6 +1,6 @@
  module github.com/database64128/swgp-go
  
 -go 1.21.4
-+go 1.23
++go 1.23.0
  
  require (
         go.uber.org/zap v1.26.0

@@ -28,6 +28,7 @@
   #waylyrics = pkgs.callPackage ./pkgs/waylyrics {};
   #vkbasalt = pkgs.callPackage ./pkgs/vkbasalt {};
   HDiffPatch = pkgs.callPackage ./pkgs/HDiffPatch {};
+  BBDown = pkgs.callPackage ./pkgs/BBDown {};
   #sakaya = pkgs.callPackage ./pkgs/sakaya {};
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...

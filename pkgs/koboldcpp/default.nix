@@ -6,7 +6,7 @@
 , python3
 , cmake
 , openblas
-, clblast
+, clblas
 , ocl-icd
 , writeShellApplication
 , makeWrapper

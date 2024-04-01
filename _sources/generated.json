@@ -1,0 +1,82 @@
+{
+    "ab-av1": {
+        "cargoLocks": null,
+        "date": "2024-03-09",
+        "extract": null,
+        "name": "ab-av1",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "alexheretic",
+            "repo": "ab-av1",
+            "rev": "e65965f74725a1f6d081c583af91af81f68a2268",
+            "sha256": "sha256-fUVeeRgfDEggSx1Zpqlneu3W+afR8+6fAnD0F2QQ5uI=",
+            "type": "github"
+        },
+        "version": "e65965f74725a1f6d081c583af91af81f68a2268"
+    },
+    "av1an": {
+        "cargoLocks": null,
+        "date": "2024-03-27",
+        "extract": null,
+        "name": "av1an",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "master-of-zen",
+            "repo": "av1an",
+            "rev": "6632b470640cccc0ade641b87a456d6e127bb4ca",
+            "sha256": "sha256-fZWgN3HOZXsRLCFcLkeRcHNj3fOiTosiC91jAK5xm30=",
+            "type": "github"
+        },
+        "version": "6632b470640cccc0ade641b87a456d6e127bb4ca"
+    },
+    "koboldcpp": {
+        "cargoLocks": null,
+        "date": "2024-03-14",
+        "extract": null,
+        "name": "koboldcpp",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": true,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "LostRuins",
+            "repo": "koboldcpp",
+            "rev": "f3b7651102c3ce3e4f331b93137dc32d752eada0",
+            "sha256": "sha256-l6XWbstBAl5BQrwrQxLuPX5uKp02hED6vGQQVhZAO9U=",
+            "type": "github"
+        },
+        "version": "f3b7651102c3ce3e4f331b93137dc32d752eada0"
+    },
+    "swgp-go": {
+        "cargoLocks": null,
+        "date": "2024-03-12",
+        "extract": null,
+        "name": "swgp-go",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "database64128",
+            "repo": "swgp-go",
+            "rev": "ff0d7b3552d6b6c1651791f5fab2de5075746e36",
+            "sha256": "sha256-oSkIBOC71jgWJEMpv7q0Rd11KRIGxbpYOG2gK8OMLRk=",
+            "type": "github"
+        },
+        "version": "ff0d7b3552d6b6c1651791f5fab2de5075746e36"
+    }
+}

@@ -6,34 +6,20 @@
 , python3
 , cmake
 , openblas
-, clblas
 , ocl-icd
 , writeShellApplication
 , makeWrapper
+, pkgs
 , ...
 } @ args:
 
-
+let
+  sources = pkgs.callPackage ../../_sources/generated.nix { };
+in
 stdenv.mkDerivation rec {
   # 指定包名和版本
   pname = "koboldcpp";
-  version = "5174f9de7b9d30dc12174a865c0cef612658f5aa";
-
-  # 从 GitHub 下载源代码
-  src = fetchFromGitHub {
-    owner = "LostRuins";
-    repo = "koboldcpp";
-    rev = "5174f9de7b9d30dc12174a865c0cef612658f5aa";
-    sha256 = "sha256-KEzxxRWUnEwK5ObNEFKEzEa6go1BRfFWP81v4BD0ssg=";
-    fetchSubmodules = true;
-  };
-  #   koboldcpp7B = writeShellApplication {
-  #     name = "koboldcpp-7B";
-  #     runtimeInputs = [ openblas clblast ocl-icd python3 ];
-  #     text = ''
-  #       koboldcpp --useclblast 0 0 --gpulayers 33
-  #     '';
-  #   };
+  inherit (sources.koboldcpp) version src;
   preConfigure = ''
   '';
   #enableParallelBuilding = false;
@@ -41,14 +27,14 @@ stdenv.mkDerivation rec {
   # 此选项禁用了对 CMake 软件包的一些自动修正
   dontFixCmake = true;
   buildPhase = ''
-    make LLAMA_OPENBLAS=1 LLAMA_CLBLAST=1
+    make -j $(nproc) LLAMA_OPENBLAS=1 LLAMA_VULKAN=1
   '';
   installPhase = ''
     mkdir -p $out/bin/
     cp -r *.so $out/bin/
     cp $src/koboldcpp.py $out/bin/koboldcpp
     chmod +x $out/bin/koboldcpp
-    wrapProgram $out/bin/koboldcpp --prefix PATH : ${lib.makeBinPath [python3 openblas clblast ocl-icd]}
+    wrapProgram $out/bin/koboldcpp --prefix PATH : ${lib.makeBinPath [python3 openblas ocl-icd]}
   '';
   # 将 CMake 加入编译环境，用来生成 Makefile
   nativeBuildInputs = [ pkg-config openblas clblas ocl-icd makeWrapper ];

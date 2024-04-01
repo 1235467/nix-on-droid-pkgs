@@ -37,6 +37,6 @@ stdenv.mkDerivation rec {
     wrapProgram $out/bin/koboldcpp --prefix PATH : ${lib.makeBinPath [python3 openblas ocl-icd]}
   '';
   # 将 CMake 加入编译环境，用来生成 Makefile
-  nativeBuildInputs = [ pkg-config openblas clblas ocl-icd makeWrapper ];
+  nativeBuildInputs = [ pkg-config openblas ocl-icd makeWrapper ];
   BuildInputs = [ python3 cmake ];
 }

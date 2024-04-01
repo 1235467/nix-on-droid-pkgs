@@ -25,6 +25,18 @@
     };
     date = "2024-03-27";
   };
+  candy = {
+    pname = "candy";
+    version = "4b9e79aaceb53868ea09988d756a1bd82a652612";
+    src = fetchFromGitHub {
+      owner = "lanthora";
+      repo = "candy";
+      rev = "4b9e79aaceb53868ea09988d756a1bd82a652612";
+      fetchSubmodules = false;
+      sha256 = "sha256-4X/X2VmjH8OIMt82uW7TcW8Ojta9C57By1pkeF9ysIY=";
+    };
+    date = "2024-04-01";
+  };
   koboldcpp = {
     pname = "koboldcpp";
     version = "f3b7651102c3ce3e4f331b93137dc32d752eada0";

@@ -16,6 +16,9 @@ git.fetchSubmodules = true
 src.git = "https://github.com/master-of-zen/av1an"
 fetch.github = "master-of-zen/av1an"
 
+[candy]
+src.git = "https://github.com/lanthora/candy"
+fetch.github = "lanthora/candy"
 #[wechat-uos]
 #src.webpage = "https://aur.archlinux.org/rpc/?v=5&type=info&arg[]=wechat-uos"
 #src.regex = "\"Version\":\"([^\"]+)\""

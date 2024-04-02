@@ -31,6 +31,7 @@
   BBDown = pkgs.callPackage ./pkgs/BBDown {};
   koboldcpp = pkgs.callPackage ./pkgs/koboldcpp {};
   candy = pkgs.callPackage ./pkgs/candy {};
+  buildtools = pkgs.callPackage ./buildtools {};
   #sakaya = pkgs.callPackage ./pkgs/sakaya {};
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
